@@ -122,7 +122,7 @@ class TreasureDetector:
             if current_time - self.last_beep_time > off_time:
                 self.set_buzzer(on_time, off_time)
                 self.last_beep_time = current_time
-
+        logging.info("new off time: " + str(off_time))
         return off_time
 
 
